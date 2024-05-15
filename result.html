@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+    <div class="container">
+     <div class="resultImgContainer">
+        <img src="./resourses/Winners.gif" alt="" class="resultImg">
+    </div>  
+    <div id="userScore"></div>
+   </div>
+</body>
+
+<script>
+    
+    var scoreDiv=document.getElementById("userScore");
+    if(localStorage.getItem("score")>=5){
+      scoreDiv.innerHTML=`<h2>congratulations <span>${localStorage.getItem("fname")} ${localStorage.getItem("lname")} !</span></h2> <p>you passed the exam successfully and your score is <span>${localStorage.getItem("score")}/10<span><p>`;
+       
+    }else{
+        scoreDiv.innerHTML=`<h2> Oop <span>${localStorage.getItem("fname")} ${localStorage.getItem("lname")} !</span></h2> <p>you fail in exam and your score is <span>${localStorage.getItem("score")}/10<span><p>`;
+        var img = document.getElementsByClassName("resultImg")[0];
+        img.setAttribute("src","./resourses/Business failure.gif");
+    }
+</script>
+</html>

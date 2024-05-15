@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="./css/Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="logo"><span class="color-logo">Q</span>uizer</div>
+     <div class="login">
+
+       <div class="loginImgContainer">
+            <img src="resourses/Computer login-bro.svg"  class="loginImg" alt="login image">
+       </div>
+
+       <div class="loginContainer">
+            <div class="loginForm">
+             <form action="#" method="post" id="loginForm">
+              <div class="titles">
+                 <p class="login-title">Welcome back!</p>
+                 <p class="login-desc">login to continue</p>
+              </div>
+                <span class="login-sp">Email</span>
+                 
+                <input type="text" class="Login-control" id="loginEmail" autocomplete="off" placeholder="your-email@gmail.com">
+                <div class="Email-Error">
+                  <i class='bx bx-error-circle error-icon'></i> 
+                  <span class="email-error"></span>      
+                </div>
+                <span class="login-sp">password</span>
+                 <input type="Password" class="Login-control"id="loginPass" autocomplete="off" placeholder="Your Password">
+                <div class="Password-Error">
+                  <i class='bx bx-error-circle error-icon'></i> 
+                  <span class="password-error"></span>
+                 
+                  
+                </div>
+                <div class="forget">Forget password?</div>
+                <input type="submit" id="loginBtn" value="LOGIN">
+                
+                <p class="loginErrorMsg"></p>
+                
+             </form> 
+            </div>
+       </div>
+     </div>
+   
+    <script src="./js/login.js"></script>
+</body>
+</html>

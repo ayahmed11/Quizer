@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout</title>
+    <link rel="stylesheet" href="./css/pages.css">
+   
+</head>
+<body>
+    <div class="timeContainer">
+    <div class="timeoutImgContainer">
+       <img class="timeoutImg" src="resourses/Deadline.gif" alt="">
+    </div>
+    <div id="timeout"></div>
+    </div>
+
+    <script>
+        var timeoutDiv = document.getElementById("timeout");
+        timeoutDiv.innerHTML=`<h2 class="timeouthead">Timeout <span> ${localStorage.getItem("fname")} ${localStorage.getItem("lname")} </span> !</h2><p>unfortunatly you missed out the exam, please try again later.</p>`
+    </script>
+</body>
+</html>

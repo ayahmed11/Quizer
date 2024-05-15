@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP</title>
+    <link rel="stylesheet" href="./css/Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+   <script>
+   
+   </script>
+</head>
+<body>
+    
+      <!-----------------------Sign up-------------------------->
+      <div class="logo"><span class="color-logo">Q</span>uizer</div>
+    <div class="layout">
+      
+      <div class="bgImage">
+        <img class="myImage" src="resourses/Online test-amico.svg" alt="">
+       
+      </div>
+    <div class="formContainer">
+       <div class="signupFormContainer">
+      <form id="signUpForm" action="#" method="get"></form>
+        <h2 class="signUp-head">Create Account</h2>
+        <p class="signUp-p">Sign up with your email for registration</p>
+        <br/>
+        <div class="form-group1">
+          <label for="fname"> First Name</label>
+          <input
+            type="text"
+            placeholder="Your First Name"
+            id="fname"
+            class="form-control"
+            autocomplete="off"
+            onkeyup="fnameValidation()"
+          />
+          <span class="Error fname-Error">
+             <i class='bx bx-error-circle error-icon'></i> 
+             <p class="fnameMsg"></p>
+          </span>
+        </div>
+        <div class="form-group2">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            placeholder="Your Last Name"
+            id="lname"
+            class="form-control"
+            autocomplete="off"
+            onkeyup="lnameValidation()"
+          />
+          <span class="Error lname-error">
+            <i class='bx bx-error-circle error-icon'></i> 
+            <p class="lnameMsg"></p>
+         </span>
+  
+        </div>
+        <div class="form-group3">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            placeholder="your-email@gmail.com"
+            id="email"
+            class="form-control"
+            autocomplete="off"
+            onkeyup="emailValidation()"
+          />
+          <span class="Error  email-error">
+            <i class='bx bx-error-circle error-icon'></i> 
+            <p class="emailMsg"></p>
+         </span>
+  
+        </div>
+        <div class="form-group4">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Your Password"
+            class="form-control"
+            id="password"
+            autocomplete="off"
+            onkeyup="passwordValidation()"
+          />
+          <span class="Error password-error">
+            <i class='bx bx-error-circle error-icon'></i> 
+            <p class="passwordMsg"></p>
+         </span>
+        </div>
+        <div>
+          <label for="reType">Re-type Password</label>
+          <input
+            type="password"
+            placeholder="Re-type Your password"
+            class="form-control"
+            id="reType"
+            autocomplete="off"
+            onkeyup="retypeValidation()"
+          />
+          <span class="Error retype-error">
+            <i class='bx bx-error-circle error-icon'></i> 
+            <p class="retypeMsg"></p>
+         </span>
+        </div>
+        <input type="submit" id="SignUp" value="Sign Up" />
+           <span class="mySpan">or register with</span>
+         <img src="resourses/facebook.png" alt="" class="social firstIcon">
+        <img src="resourses/social.png" alt="" class="social">
+        <img src="resourses/linkedin.png" alt="" class="social">
+
+      </form>
+    </div>
+    </div>
+  </div>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>

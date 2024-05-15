@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+}
+ 
+.pageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: #ededed;
+
+}
+
+
+#quizDiv{
+   width:75%;
+   
+   
+   height: 100vh;
+   box-sizing: border-box;
+   padding:20px;
+   height: 100%;
+   display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+   
+   
+     
+}
+.questionContianer{
+    background-color: #fff;
+     width: 70vw;
+     height: 90vh;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+     
+}
+#questionNo{
+   font-size: 25px;
+    display: block;
+   color: #806AE6;
+   text-align: center;
+   font-weight: 400;
+  
+}
+#questionText{
+    display: inline-block;
+    font-size: 23px;
+}
+.questionDiv{
+    padding: 10px;
+    border-bottom: 1px solid #cbc8c9;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bigMarkContainer{
+    display: flex;
+    width: 30vw;
+    
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+     
+}
+
+#markerContainer{
+    width: 25vw;
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-color: #826ee2;
+    box-shadow: 0 20px 35px rgba(0,0,0, 0.1);
+  
+}
+.markHead{
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#choicesDiv{
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    margin-top: 25px;
+   
+}
+ 
+input [type="radio"]{
+    display: block;
+   margin-right: 10px;
+}
+ 
+label{
+    display: inline-block;
+    border: 1px solid rgba(203, 200, 201, 0.5);
+    padding: 8px;
+    border-radius: 20px;
+     
+
+}
+
+.user{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+#markButton{
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    border-radius: 25px;
+    width:80px;
+    height: 30px;
+}
+ 
+#markButton:hover{
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    opacity: 0.8;
+    width:80px;
+    border-radius: 25px;
+    height: 30px;
+}
+
+#submitbtn{
+    width: 170px;
+    height:40px; 
+    background: radial-gradient(circle at 10% 20%, rgb(111, 111, 219) 0%, rgb(182, 109, 246) 72.4%);  
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 40%;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    
+    
+}
+#submitbtn:hover{
+    width: 170px;
+    height:40px; 
+    background: radial-gradient(circle at 10% 20%, rgb(111, 111, 219) 0%, rgb(182, 109, 246) 72.4%);  
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 40%;
+    cursor: pointer;
+    margin-top: 15px;
+    opacity: 0.9;
+    
+}
+
+#previousbtn{
+     
+     width:100px;
+     height: 30px;
+     border: 1px solid #806AE6;
+     color: #806AE6;
+     background-color: #fff;
+     cursor: pointer;
+     border-radius: 25px;
+   
+     
+}
+#previousbtn:hover{
+     
+    width:100px;
+    height: 30px;
+    border: 1px solid #806AE6;
+    color: #806AE6;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    
+}
+#nextButton{
+   
+    width:100px;
+    height: 30px;
+    border: 1px solid #806AE6;
+    background-color:#826ee2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+#nextButton:hover{
+   
+    width:100px;
+    height: 30px;
+    border: 1px solid #806AE6;
+    background-color:#826ee2;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+.timer{
+    position:relative;
+}
+.clock{
+    font-size: 25px;
+    color:#806AE6 ;
+    
+}
+#countDownContainer{
+     position: absolute;
+     top:5px;
+     left:30px
+}
+
+#markerContainer>div{
+    
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #6a5acd;
+
+     
+   
+}
+ 
+.marker{
+    color:  #6a5acd;
+}
+.goBtn{
+    width: 40px;
+    height: 20px;
+    margin-left: 15px;
+    border: none;
+    background-color: #826ee2;;
+    color: #fff;
+    cursor: pointer;
+}
+
+.goBtn:hover{
+    width: 40px;
+    height: 20px;
+    margin-left: 15px;
+    border: none;
+    background-color: #826ee2;
+    opacity: 0.9;
+    color: #fff;
+    cursor: pointer;
+}
+.delete-span{
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.myFormChoices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
